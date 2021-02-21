@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h1>Please, input your username to recieve a map of your friends!</h1>
+<form action="/register" method="post">
+    <input name="screen_name" placeholder="screen_name" type="text">
+    <input name="bearer_token" placeholder="Bearer token" type="text">
+    <input type="submit" value="Receive the map">
+</form>
+{% endblock %}
